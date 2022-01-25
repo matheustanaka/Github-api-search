@@ -1,7 +1,15 @@
 import { ButtonReturn } from "../components/ButtonReturn";
+import { Header } from "../components/Header";
 
 const SearchResult = () => {
-    return <ButtonReturn />
+    return (
+        <>
+            <Header />
+            <ButtonReturn />
+        </>
+
+    )
+
 }
 
 export default SearchResult;
