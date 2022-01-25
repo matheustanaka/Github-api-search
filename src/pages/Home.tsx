@@ -1,11 +1,9 @@
-import { Header } from "../components/Header";
-import { InputSearch } from "../components/InputSearch";
+import RepoCard from "../components/RepoCard";
 
 const Home = () => {
     return (
         <>
-            <Header />
-            <InputSearch />
+            <RepoCard />
         </>
 
     )
