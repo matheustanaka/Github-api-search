@@ -6,12 +6,10 @@ import SearchResult from './pages/SearchResult';
 
 function App() {
   return (
-    <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/result" element={<SearchResult />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/result" element={<SearchResult />} />
       </Routes>
-    </BrowserRouter>
   );
 }
 
