@@ -1,16 +1,11 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import RepoList from "./components/RepoList";
 
-import Home from './pages/Home';
-import SearchResult from './pages/SearchResult';
-
-function App() {
+const app = () => {
   return (
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/result" element={<SearchResult />} />
-      </Routes>
-  );
+    <>
+      <RepoList />
+    </>
+  )
 }
 
-export default App;
+export default app;
