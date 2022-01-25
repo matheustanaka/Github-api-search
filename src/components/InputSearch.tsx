@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { ButtonSearch } from "./ButtonSearch";
+
 export function InputSearch() {
     const [search, setSearch] = useState("");
 
@@ -22,6 +24,7 @@ export function InputSearch() {
                     placeholder="Type text here"
                     onChange={(e) => setSearch(e.currentTarget.value)}
                 />
+                <ButtonSearch />
             </form>
 
         </div>
