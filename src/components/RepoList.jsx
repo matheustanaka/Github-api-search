@@ -86,6 +86,7 @@ const RepoList = () => {
             <div className="results-container">
                 {repos.map(renderRepo)}
             </div>
+            <RepoDetails details={details} loading={detailsLoading}/>
         </div>
     )
 }
