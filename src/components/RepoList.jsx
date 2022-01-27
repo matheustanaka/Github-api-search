@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 import RepoDetails from "./RepoDetails";
 
@@ -19,10 +19,18 @@ const RepoList = () => {
         setDetails({});
     }, [username]);
 
+    const myRef = useRef(null);
+
+    const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth'});
+
+
     //submit an event to search repos
     const handleSubmit = (event) => {
+
         event.preventDefault();
         searchRepos();
+        executeScroll();
+
     }
 
     //getting username from github api
@@ -83,7 +91,7 @@ const RepoList = () => {
                     <button className="button" onClick={handleSubmit}>{loading ? "Searching..." : "Search"}</button>
                 </form>
             </div>
-            <div className="results-container">
+            <div ref={myRef} className="results-container">
                 {repos.map(renderRepo)}
             </div>
             <RepoDetails details={details} loading={detailsLoading}/>
