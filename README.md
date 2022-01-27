@@ -1,6 +1,7 @@
 <h1 align="center"> Github Api Search</h1>
 
 Fetching repositories from Github API.
+Check the application deployed at https://matheustanaka-github-api-search.netlify.app/
 
 ## Getting Started
 
