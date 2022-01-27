@@ -1,0 +1,137 @@
+.page-container {
+    background-color: #ddddf1;
+
+    .form-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .green {
+            color: #04D361;
+            transition: color 400ms;
+
+        }
+
+        .green:hover {
+            color: #039c48;
+        }
+        
+        .input {
+            background-color: #FFFFFF;
+
+            border: 0;
+
+            color: #3A3A3A;
+            
+            width: 410px;
+            height: 70px;
+            
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            
+            outline: none;
+        }
+
+        .button {
+            width: 210px;
+            height: 70px;
+            background-color: #04D361;
+
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border: 0;
+        
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            
+            cursor: pointer;
+
+            transition: background-color 400ms;
+        }
+
+         .button:hover {
+            background-color: #039c48;
+         }
+    }
+
+    .results-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .repo-card {
+
+            width: 780px;
+            height: 300px;
+
+            background-color: #FFFFFF;
+            margin: 20px;
+
+            border: 0;
+            border-radius: 6px;
+
+            padding: 10px 20px;
+
+            .img-title {
+                display: flex;
+                justify-content: center;
+                
+                img {
+                    width: 100px;
+                    height: 100px;
+                    
+                    margin-top: 20px;
+                    border-radius: 100px;
+                }
+
+            }
+
+            .others {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                }
+                h2 {
+                    color: #04D361;
+                    margin-top: 15px;
+                    font-size: 2rem;
+
+                    transition: color 400ms;
+                }
+
+                h2:hover {
+                    color: #039c48;
+                }
+
+                p {
+                    margin-top: 5px;
+                    font-weight: bold;
+
+                    text-align: center;
+                }
+
+                .language {
+                    font-weight: bolder;
+                    color: #039c48;
+                }
+            }
+
+        }
+    }
+}
